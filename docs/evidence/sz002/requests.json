@@ -1,0 +1,37 @@
+[
+    {
+        "request_uri":  "https://cmr.earthdata.nasa.gov:443/search/collections.json?short_name=NISAR_L2_GCOV*\u0026options%5Bshort_name%5D%5Bpattern%5D=true\u0026page_size=20",
+        "server_response_time_utc":  "2026-11-12T09:02:41.695Z",
+        "local_preserved_at_utc":  "2026-11-12T09:02:42.2538208Z",
+        "http_status":  200,
+        "cmr_hits":  3,
+        "response_file":  "collections.json",
+        "bytes":  15616,
+        "sha256":  "b9ccb2cd73209477dd7485d669db0e9ad8c1315490f8ea865ba7e2a8d3a7d2f5",
+        "note":  "Initial successful collection response; text re-encoded UTF-8 without BOM; client request timestamp not retained when subsequent UMM decode failed"
+    },
+    {
+        "request_uri":  "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C3622241360-ASF\u0026bounding_box=79.75,6.70,80.85,7.30\u0026temporal=2026-10-21T00:00:00Z,2026-11-12T08:58:46Z\u0026sort_key=-start_date\u0026page_size=10",
+        "requested_at_utc":  "2026-11-12T09:03:56.1021100Z",
+        "retrieved_at_utc":  "2026-11-12T09:03:56.8972598Z",
+        "http_status":  200,
+        "cmr_hits":  2,
+        "returned_items":  2,
+        "response_file":  "kelani_validated_granules.json",
+        "bytes":  58944,
+        "sha256":  "7244b7284e3aba75d8c2b1ca3cf28725152220a4b347c515fea08bd93f7d977f",
+        "note":  "Public UMM-G metadata; byte response decoded as UTF-8; no related asset URLs followed"
+    },
+    {
+        "request_uri":  "https://cmr.earthdata.nasa.gov/search/granules.umm_json?collection_concept_id=C2854338529-ASF\u0026bounding_box=79.75,6.70,80.85,7.30\u0026temporal=2026-06-17T00:00:00Z,2026-11-12T08:58:46Z\u0026sort_key=-start_date\u0026page_size=10",
+        "requested_at_utc":  "2026-11-12T09:03:56.9817965Z",
+        "retrieved_at_utc":  "2026-11-12T09:03:57.9921492Z",
+        "http_status":  200,
+        "cmr_hits":  20,
+        "returned_items":  10,
+        "response_file":  "kelani_provisional_granules.json",
+        "bytes":  387030,
+        "sha256":  "e05a0612330e181dda5c238bd91e1db03824a102e3d76c73fad77cade795c314",
+        "note":  "Public UMM-G metadata; byte response decoded as UTF-8; no related asset URLs followed"
+    }
+]

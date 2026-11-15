@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools==65.5.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinel-zero"
+version = "0.1.0"
+description = "Bounded NISAR catalog discovery and read-only GCOV subset inspection"
+requires-python = ">=3.11,<3.12"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest==8.3.5"]
+inspection = ["numpy==2.2.6", "rasterio==1.4.3"]
+diagnostics = ["plotly==6.3.1"]
+ui = ["streamlit==1.67.0", "numpy==2.2.6", "rasterio==1.4.3", "plotly==6.3.1", "reportlab==5.1.0"]
+report-validation = ["pypdf==7.1.0", "pypdfium2==5.15.2"]
+
+[project.scripts]
+sentinel-zero = "sentinel_zero.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"sentinel_zero.presentation" = ["*.css", "*.html", "*.mjs"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = ["regression: read-only tests against preserved real catalog metadata", "real_data: actual local NISAR raster integration; requires SENTINEL_ZERO_SOURCE_ROOT"]

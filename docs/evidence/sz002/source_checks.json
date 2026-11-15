@@ -1,0 +1,25 @@
+{
+  "task_id": "SZ-002",
+  "retrieved_on": "2026-11-12",
+  "record_type": "Analyst observations of actually accessed public sources; not raw page captures",
+  "sources": [
+    {"id":"C","url":"https://www.spaceappschallenge.org/2026/challenges/dancing-with-the-sars/","method":"browser rendered Details panel","result":"CONTENT_INSPECTED","finding":"Interactive NISAR surface-change application; study-area workflow and physical hypotheses; Potential Considerations explicitly optional."},
+    {"id":"R","url":"https://www.spaceappschallenge.org/2026/challenges/dancing-with-the-sars/?tab=resources","method":"browser rendered Resources panel","result":"PLACEHOLDER_INSPECTED","finding":"Resources announced for Friday November 13; actual resource contents pending.","text_fetch_route":"URL inaccessible via web text-fetch tool; browser fallback succeeded"},
+    {"id":"F","url":"https://www.spaceappschallenge.org/resources/participant-faqs/","method":"browser main-content inspection","result":"CONTENT_INSPECTED","finding":"November 14-15 event; submission follows local ending time; team conditions; tool-use disclosure; November 13 resource/submission/judging guide schedule; general pre-event work restriction.","text_fetch_route":"502 Bad Gateway; browser fallback succeeded"},
+    {"id":"I","url":"https://www.spaceappschallenge.org/resources/","method":"browser main-content inspection","result":"INDEX_INSPECTED","finding":"FAQ, team formation and Space Apps Connect guides listed; submission/judging guides not listed at inspection.","text_fetch_route":"502 Bad Gateway; browser fallback succeeded"},
+    {"id":"L","url":"https://www.spaceappschallenge.org/legal/","method":"browser main-content inspection","result":"CONTENT_INSPECTED","finding":"Challenge alignment, publication rights, original/third-party licensing, source citation and submission-content restrictions inspected.","text_fetch_route":"502 Bad Gateway; browser fallback succeeded"},
+    {"id":"E","url":"https://www.spaceappschallenge.org/2026/local-events/colombo/?tab=schedule","method":"browser rendered Local Event Schedule panel","result":"PLACEHOLDER_INSPECTED","finding":"Local schedule placeholder; site labels local-lead material user-generated. Exact cutoff not established.","text_fetch_route":"URL inaccessible via web text-fetch tool; browser fallback succeeded"},
+    {"id":"N-AVAIL","url":"https://nisar-docs.asf.alaska.edu/availability-overview/","method":"browser rendered guide","result":"CONTENT_INSPECTED","finding":"Validated release November 6 covering acquisitions from October 21; provisional and beta maturity distinctions; pair availability must be queried."},
+    {"id":"N-GCOV","url":"https://nisar-docs.asf.alaska.edu/gcov/","method":"public web text inspection","result":"CONTENT_INSPECTED","finding":"GCOV L2 terrain-corrected gamma-zero power, real diagonal terms, subbands/polarizations, averaging-ensemble mask and product specification reference."},
+    {"id":"N-KNOWN","url":"https://nisar-docs.asf.alaska.edu/nisar-known-issues/","method":"public web text inspection","result":"CONTENT_INSPECTED","finding":"Validated known issues; incomplete-L0B issue resolved at P05036; permanent July 27-August 10 instrument data gap."},
+    {"id":"N-PROV","url":"https://nisar-docs.asf.alaska.edu/provisional-known-issues/","method":"public web text inspection","result":"CONTENT_INSPECTED","finding":"Provisional P05023 quality risks include incomplete inputs, interference, Frequency B calibration and joint-mode radiometric bands."},
+    {"id":"CMR","url":"https://cmr.earthdata.nasa.gov/search/site/docs/search/api.html","method":"browser documentation and actual public REST queries","result":"DOCUMENTATION_ACCESSED_AND_INTERFACE_EXERCISED","finding":"Actual collection and bounded granule requests preserved separately; no SDK installed."},
+    {"id":"AOI","url":"https://www.unicef.org/srilanka/media/306/file/Map%20Compendium%20of%20the%20kelani%20river%20basin.pdf","method":"public web text extraction, front matter and contents","result":"DOCUMENT_SOURCE_INSPECTED","finding":"CEA/IUCN January 2016 map compendium provides documented basin context. No vector geometry, precise boundary or redistribution license established."}
+  ],
+  "not_independently_verified": ["Team Colombo registration", "Team-reported organizer early-work authorization", "Exact Colombo cutoff", "Unreleased resources and judging/submission guide contents", "Original HDF5 product contents or access", "Scientific suitability of preliminary pair"],
+  "catalog_transport_failures": [
+    "Initial sandbox Invoke-WebRequest failed: Unable to connect to the remote server. Approved outside-sandbox retry returned HTTP 200.",
+    "Initial UMM-G handling cast byte[] Content to string, causing ConvertFrom-Json Invalid JSON primitive. No failed granule payload was saved. Explicit UTF-8 decoding corrected the issue; successful responses were preserved."
+  ],
+  "asset_access": "No raster, QA, credential endpoint, signed URL or source product was requested. Canonical references inside public catalog responses were not followed."
+}

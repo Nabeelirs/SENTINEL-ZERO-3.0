@@ -1,0 +1,32 @@
+{
+  "fixture_notice": "SYNTHETIC SOFTWARE TEST METADATA. Not satellite observations or scientific evidence.",
+  "collection": {
+    "id": "C1-TEST", "short_name": "SYNTHETIC_GCOV", "dataset_id": "Synthetic Provisional GCOV fixture",
+    "version_id": "1", "processing_level_id": "2"
+  },
+  "granule": {
+    "meta": {"concept-id": "G1-TEST", "collection-concept-id": "C1-TEST", "revision-id": 1},
+    "umm": {
+      "CollectionReference": {"ShortName": "SYNTHETIC_GCOV", "Version": "1"},
+      "TemporalExtent": {"RangeDateTime": {"BeginningDateTime": "2026-10-06T00:00:00Z", "EndingDateTime": "2026-10-06T00:01:00Z"}},
+      "AdditionalAttributes": [
+        {"Name": "TRACK_NUMBER", "Values": ["84"]}, {"Name": "FRAME_NUMBER", "Values": ["5"]},
+        {"Name": "STACK_ID", "Values": ["084_A_005"]}, {"Name": "ASCENDING_DESCENDING", "Values": ["ASCENDING"]},
+        {"Name": "PRODUCT_TYPE", "Values": ["GCOV"]}, {"Name": "PROCESSING_LEVEL", "Values": ["L2"]},
+        {"Name": "PRODUCT_VERSION", "Values": ["1.0.11"]}, {"Name": "FREQUENCIES", "Values": ["A"]},
+        {"Name": "FREQUENCY_A_POLARIZATION", "Values": ["HH", "HV"]}, {"Name": "FREQUENCY_A_RANGE_BANDWIDTH", "Values": ["40"]}
+      ],
+      "SpatialExtent": {"HorizontalSpatialDomain": {"Geometry": {"GPolygons": [{"Boundary": {"Points": [
+        {"Longitude": 79, "Latitude": 6}, {"Longitude": 81, "Latitude": 6}, {"Longitude": 81, "Latitude": 8}, {"Longitude": 79, "Latitude": 8}, {"Longitude": 79, "Latitude": 6}
+      ]}}]}}},
+      "DataGranule": {"Identifiers": [
+        {"IdentifierType": "ProducerGranuleId", "Identifier": "SYNTHETIC_NOT_A_REAL_ACQUISITION_1"},
+        {"IdentifierType": "CRID", "Identifier": "TEST_CRID"},
+        {"IdentifierType": "Other", "IdentifierName": "SASVersionId", "Identifier": "TEST_SAS"}
+      ]},
+      "PGEVersionClass": {"PGEName": "TEST_PGE", "PGEVersion": "TEST_VERSION"},
+      "Platforms": [{"Instruments": [{"Characteristics": [{"Name": "LookDirection", "Value": "LEFT"}]}]}],
+      "RelatedUrls": [{"URL": "https://example.invalid/synthetic.h5", "Type": "GET DATA", "Format": "HDF5"}]
+    }
+  }
+}

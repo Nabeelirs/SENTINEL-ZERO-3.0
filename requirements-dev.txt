@@ -1,0 +1,10 @@
+# Exact Windows/Python 3.11.2 environment verified in SZ-003.
+# Discovery runtime is standard-library-only; optional GCOV inspection uses
+# requirements-inspection.txt. Packages below are test/build tooling.
+colorama==0.4.6; sys_platform == "win32"
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+pytest==8.3.5
+setuptools==65.5.0
+wheel==0.45.1

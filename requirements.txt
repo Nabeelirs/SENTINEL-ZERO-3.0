@@ -1,0 +1,3 @@
+# Hosting entry uses the same tested runtime; Python 3.11 must be selected.
+-r requirements-ui.txt
+.
