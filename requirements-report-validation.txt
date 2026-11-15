@@ -1,0 +1,3 @@
+# Optional local PDF parsing/rendering for SZ-007B quality assurance; not app runtime.
+pypdf==7.1.0
+pypdfium2==5.15.2

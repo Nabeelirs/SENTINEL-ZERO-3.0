@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "aoi_label": "Exploratory Kelani-area rectangle; not a verified basin boundary",
+  "collection_concept_id": "C3622241360-ASF",
+  "bounding_box": [79.75, 6.70, 80.85, 7.30],
+  "temporal_start": "2026-10-21T00:00:00Z",
+  "temporal_end": "2026-11-12T08:58:46Z",
+  "page_size": 10,
+  "max_pages": 10,
+  "max_results": 100,
+  "sort_key": "-start_date",
+  "frequency": "A",
+  "polarization": "HH"
+}

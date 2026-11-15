@@ -1,0 +1,34 @@
+<section class="earth-viewer" aria-label="NISAR Earth evidence atlas">
+  <header class="viewer-head">
+    <div><span class="eyebrow">EARTH ATLAS / NISAR L2 GCOV</span><h2 data-role="scene-title">Historical radar observation</h2></div>
+    <span class="science-tag">PROVISIONAL</span>
+  </header>
+  <nav class="viewer-modes" aria-label="Scientific observation mode">
+    <button type="button" data-mode="BEFORE" aria-pressed="false">Before <small>06 OCT</small></button>
+    <button type="button" data-mode="AFTER" aria-pressed="true">After <small>18 OCT</small></button>
+    <button type="button" data-mode="CHANGE" aria-pressed="false">Change <small>Δ dB</small></button>
+    <button type="button" data-mode="COMPARE" aria-pressed="false">Compare <small>ALIGNED</small></button>
+    <span class="mode-spacer"></span>
+    <button type="button" class="tool" data-action="zoom-in" aria-label="Zoom in">+</button>
+    <button type="button" class="tool" data-action="zoom-out" aria-label="Zoom out">−</button>
+    <button type="button" class="tool reset" data-action="reset" aria-label="Reset geographic view">Reset</button>
+  </nav>
+  <div class="canvas-stage">
+    <canvas tabindex="0" aria-label="Georeferenced NISAR raster. Click a cell, or use arrow keys and Enter to inspect. Drag to pan; use zoom controls."></canvas>
+    <div class="north" aria-hidden="true">N<br>↑</div>
+    <span class="scene-corner">UTM 44N <span>EPSG:32644</span></span>
+    <div class="scene-message" role="status">Loading verified local observation pixels…</div>
+    <div class="compare-badges" hidden><span data-role="before-badge">06 OCT 2026</span><span data-role="after-badge">18 OCT 2026</span></div>
+  </div>
+  <div class="comparison-control" hidden>
+    <label>Aligned comparison split <input type="range" min="0" max="100" value="50" step="1" aria-label="Comparison split percentage"></label>
+    <span>One native grid · one shared pan and zoom</span>
+  </div>
+  <div class="legend">
+    <span class="legend-title" data-role="legend-title">Gamma-zero backscatter power · dB display</span>
+    <div class="legend-content"><div class="ramp-wrap"><div class="ramp"></div><div class="legend-values"><span data-role="legend-min"></span><span data-role="legend-mid"></span><span data-role="legend-max"></span></div></div><span class="excluded"><i></i>Excluded</span></div>
+    <p data-role="display-note"></p>
+  </div>
+  <footer class="viewer-footer"><span class="coordinate-readout" aria-live="polite">Click a cell to inspect the verified measurements.</span><span>North up · 10 m posting · historical acquisitions</span></footer>
+  <details><summary>Map controls and scientific scope</summary><p>Before and After share an identical display scale. Change is the accepted saved dB raster. Colours can saturate at display limits; saved values remain unchanged. Grey pixels are excluded. Coordinates describe the declared grid, not independently verified physical positioning. Click selects a cell; drag pans. Arrow keys move a cell cursor, Enter selects it; +/− zoom, 0 resets. Comparison reveals the two observations on exactly the same transform. No basemap or live satellite feed is implied.</p></details>
+</section>

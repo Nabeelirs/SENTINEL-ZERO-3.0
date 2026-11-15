@@ -1,0 +1,364 @@
+{
+    "task_id":  "SZ-002",
+    "performed_at_utc":  "2026-11-12T09:28:22.3140223Z",
+    "validation_scope":  "Documentation and saved public catalog evidence only; no Python, application or scientific-processing tests",
+    "method":  "Transient PowerShell read-back, regex/link/table checks, ConvertFrom-Json, metadata reconciliation, Get-FileHash and git read-only commands",
+    "total_checks":  30,
+    "passed_checks":  30,
+    "failed_checks":  0,
+    "checks":  [
+                   {
+                       "name":  "file exists: AGENTS.md",
+                       "passed":  true,
+                       "detail":  "AGENTS.md"
+                   },
+                   {
+                       "name":  "file exists: PROJECT_BLUEPRINT.md",
+                       "passed":  true,
+                       "detail":  "PROJECT_BLUEPRINT.md"
+                   },
+                   {
+                       "name":  "file exists: CHALLENGE_REQUIREMENTS.md",
+                       "passed":  true,
+                       "detail":  "CHALLENGE_REQUIREMENTS.md"
+                   },
+                   {
+                       "name":  "file exists: DEVELOPMENT_LOG.md",
+                       "passed":  true,
+                       "detail":  "DEVELOPMENT_LOG.md"
+                   },
+                   {
+                       "name":  "file exists: docs/data_feasibility.md",
+                       "passed":  true,
+                       "detail":  "docs/data_feasibility.md"
+                   },
+                   {
+                       "name":  "exactly four root primary Markdown documents",
+                       "passed":  true,
+                       "detail":  [
+                                      "AGENTS.md",
+                                      "PROJECT_BLUEPRINT.md",
+                                      "CHALLENGE_REQUIREMENTS.md",
+                                      "DEVELOPMENT_LOG.md"
+                                  ]
+                   },
+                   {
+                       "name":  "binding operational instructions",
+                       "passed":  true,
+                       "detail":  "Operational prohibitions, completion and resumption instructions read back"
+                   },
+                   {
+                       "name":  "all eleven benchmark matrix rows",
+                       "passed":  true,
+                       "detail":  {
+                                      "expected":  [
+                                                       "QUEÑARIS",
+                                                       "SkySense",
+                                                       "Resonant Exoplanets",
+                                                       "SpaceGenes+",
+                                                       "TengriSpacers",
+                                                       "CloudMap",
+                                                       "Memora Lab",
+                                                       "Pana2Orbit",
+                                                       "Project A.T.L.A.S.",
+                                                       "Ceylon Xzora / Weatherly",
+                                                       "ThinkSpace / U-Plan"
+                                                   ],
+                                      "missing":  [
+
+                                                  ]
+                                  }
+                   },
+                   {
+                       "name":  "all nine A-I capabilities",
+                       "passed":  true,
+                       "detail":  9
+                   },
+                   {
+                       "name":  "all 25 approved requirement IDs exactly once",
+                       "passed":  true,
+                       "detail":  [
+                                      "C01",
+                                      "C02",
+                                      "C03",
+                                      "C04",
+                                      "C05",
+                                      "C06",
+                                      "S01",
+                                      "S02",
+                                      "S03",
+                                      "S04",
+                                      "S05",
+                                      "E01",
+                                      "E02",
+                                      "E03",
+                                      "E04",
+                                      "E05",
+                                      "E06",
+                                      "E07",
+                                      "P01",
+                                      "P02",
+                                      "P03",
+                                      "P04",
+                                      "P05",
+                                      "P06",
+                                      "P07"
+                                  ]
+                   },
+                   {
+                       "name":  "roadmap IDs and priorities",
+                       "passed":  true,
+                       "detail":  {
+                                      "SZ-010":  "P1",
+                                      "SZ-012":  "P1",
+                                      "SZ-009":  "P1",
+                                      "SZ-008":  "P0",
+                                      "SZ-006":  "P0",
+                                      "SZ-013":  "P0",
+                                      "SZ-015":  "P2",
+                                      "SZ-007":  "P0",
+                                      "SZ-005":  "P0",
+                                      "SZ-004":  "P0",
+                                      "SZ-011":  "P1",
+                                      "SZ-003":  "P0",
+                                      "SZ-014":  "P0",
+                                      "SZ-002":  "P0"
+                                  }
+                   },
+                   {
+                       "name":  "no unknown task references",
+                       "passed":  true,
+                       "detail":  [
+
+                                  ]
+                   },
+                   {
+                       "name":  "precise SZ-003 scope and approval boundary",
+                       "passed":  true,
+                       "detail":  "Environment, contracts, discovery only; no automatic next task"
+                   },
+                   {
+                       "name":  "relative Markdown links resolve",
+                       "passed":  true,
+                       "detail":  [
+
+                                  ]
+                   },
+                   {
+                       "name":  "Markdown table column consistency",
+                       "passed":  true,
+                       "detail":  [
+
+                                  ]
+                   },
+                   {
+                       "name":  "preserved evidence JSON parses",
+                       "passed":  true,
+                       "detail":  {
+                                      "failures":  [
+
+                                                   ],
+                                      "files":  [
+                                                    "collections.json",
+                                                    "kelani_provisional_granules.json",
+                                                    "kelani_validated_granules.json",
+                                                    "requests.json",
+                                                    "source_checks.json"
+                                                ]
+                                  }
+                   },
+                   {
+                       "name":  "response sizes and SHA-256 match request ledger",
+                       "passed":  true,
+                       "detail":  [
+
+                                  ]
+                   },
+                   {
+                       "name":  "public CMR queries succeeded within metadata size bounds",
+                       "passed":  true,
+                       "detail":  {
+                                      "responses":  3,
+                                      "total_response_bytes":  461590
+                                  }
+                   },
+                   {
+                       "name":  "actual query counts and bounded pagination recorded",
+                       "passed":  true,
+                       "detail":  {
+                                      "validated_returned":  2,
+                                      "collections":  3,
+                                      "provisional_returned":  10,
+                                      "provisional_hits":  20,
+                                      "validated_hits":  2
+                                  }
+                   },
+                   {
+                       "name":  "validated combination correctly rejected as different stacks",
+                       "passed":  true,
+                       "detail":  [
+                                      "084_A_005",
+                                      "048_D_085"
+                                  ]
+                   },
+                   {
+                       "name":  "preliminary pair matches recorded catalog comparability fields",
+                       "passed":  true,
+                       "detail":  {
+                                      "ids":  [
+                                                  "G4348875889-ASF",
+                                                  "G4378876686-ASF"
+                                              ],
+                                      "scope":  "Catalog metadata only, not scientific acceptance",
+                                      "failures":  [
+
+                                                   ]
+                                  }
+                   },
+                   {
+                       "name":  "candidate acquisition separation is 12 days",
+                       "passed":  true,
+                       "detail":  12
+                   },
+                   {
+                       "name":  "advertised sizes reconcile with audit",
+                       "passed":  true,
+                       "detail":  12180258816
+                   },
+                   {
+                       "name":  "audit explicitly excludes scientific acceptance",
+                       "passed":  true,
+                       "detail":  "Preliminary outcome, AOI qualification and missing product checks read back"
+                   },
+                   {
+                       "name":  "source register dates and inspected sources present",
+                       "passed":  true,
+                       "detail":  [
+                                      "C",
+                                      "R",
+                                      "F",
+                                      "I",
+                                      "L",
+                                      "E",
+                                      "N-AVAIL",
+                                      "N-GCOV",
+                                      "N-KNOWN",
+                                      "N-PROV",
+                                      "CMR",
+                                      "AOI"
+                                  ]
+                   },
+                   {
+                       "name":  "no credential-bearing patterns in saved JSON",
+                       "passed":  true,
+                       "detail":  {
+                                      "failures":  [
+
+                                                   ],
+                                      "limit":  "Pattern check and action review, not a general secret-scanner guarantee"
+                                  }
+                   },
+                   {
+                       "name":  "only authorized documentation/evidence files added",
+                       "passed":  true,
+                       "detail":  {
+                                      "unexpected":  [
+
+                                                     ],
+                                      "untracked":  [
+                                                        ".gitignore",
+                                                        "AGENTS.md",
+                                                        "CHALLENGE_REQUIREMENTS.md",
+                                                        "DEVELOPMENT_LOG.md",
+                                                        "PROJECT_BLUEPRINT.md",
+                                                        "docs/data_feasibility.md",
+                                                        "docs/evidence/sz002/collections.json",
+                                                        "docs/evidence/sz002/kelani_provisional_granules.json",
+                                                        "docs/evidence/sz002/kelani_validated_granules.json",
+                                                        "docs/evidence/sz002/requests.json",
+                                                        "docs/evidence/sz002/source_checks.json",
+                                                        "docs/evidence/sz002/validation.json"
+                                                    ]
+                                  }
+                   },
+                   {
+                       "name":  "existing ignore rules protect sampled env/secret/raster paths",
+                       "passed":  true,
+                       "detail":  [
+                                      ".venv/sz002-check",
+                                      ".env",
+                                      ".env.local",
+                                      "data/raw/sz002.h5",
+                                      "data/processed/sz002.tif",
+                                      "example.hdf5"
+                                  ]
+                   },
+                   {
+                       "name":  "working branch remains unborn; host checkpoints left separate",
+                       "passed":  true,
+                       "detail":  {
+                                      "branch":  "master",
+                                      "scope":  "Read-only ref inspection; no commit/push commands executed",
+                                      "host_checkpoint_ref_count":  3,
+                                      "working_branch_refs":  [
+
+                                                              ]
+                                  }
+                   },
+                   {
+                       "name":  "official reference-style URLs match inspected source ledger",
+                       "passed":  true,
+                       "detail":  [
+
+                                  ]
+                   }
+               ],
+    "documents":  [
+                      {
+                          "file":  "AGENTS.md",
+                          "lines":  152,
+                          "characters":  8849,
+                          "sha256":  "fdbe7a379b080c53dcf8bae70c700641eaf33b92136124805c1c2ce0bdce1356"
+                      },
+                      {
+                          "file":  "PROJECT_BLUEPRINT.md",
+                          "lines":  484,
+                          "characters":  38613,
+                          "sha256":  "d1b67d1f53240957c583e0b4e38915fc062e7cd69a1b934d918c6253c7731198"
+                      },
+                      {
+                          "file":  "CHALLENGE_REQUIREMENTS.md",
+                          "lines":  115,
+                          "characters":  15239,
+                          "sha256":  "17419f3668799e3e9f93bce915144028143240ca595097e582ae25ef066cc01d"
+                      },
+                      {
+                          "file":  "DEVELOPMENT_LOG.md",
+                          "lines":  241,
+                          "characters":  15512,
+                          "sha256":  "4b8188e9225c07f887fd28d7b2c0371d7f1c2310b6babdeed99a4b47fcfcfc2e"
+                      },
+                      {
+                          "file":  "docs/data_feasibility.md",
+                          "lines":  196,
+                          "characters":  11918,
+                          "sha256":  "ddfe8a9fc9512f7f97a79ae05f1493f51b56d788458302ebe9cddc7153d53fc5"
+                      }
+                  ],
+    "gitignore_future_gaps":  [
+                                  "investigations.sqlite",
+                                  ".streamlit/secrets.toml"
+                              ],
+    "gitignore_sha256":  "ee7a94a3409571553e4bb5059479accc8328ae4a28c8de6fba72868fc9e9178c",
+    "not_run":  [
+                    "Python/interpreter/import tests",
+                    "pytest",
+                    "HDF5 product or raster inspection",
+                    "scientific processing",
+                    "application/browser app tests",
+                    "clean environment",
+                    "PDF generation",
+                    "performance benchmark"
+                ],
+    "note":  "Hashes verify preservation against this local request ledger, not an independent trusted baseline or NASA authenticity"
+}
